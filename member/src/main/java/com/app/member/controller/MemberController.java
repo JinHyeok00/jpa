@@ -1,6 +1,6 @@
 package com.app.member.controller;
 
-import com.app.member.dao.MemberDTO;
+import com.app.member.dto.MemberDTO;
 import com.app.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

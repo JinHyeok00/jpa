@@ -1,6 +1,6 @@
 package com.app.member.entity;
 
-import com.app.member.dao.MemberDTO;
+import com.app.member.dto.MemberDTO;
 import lombok.Getter;
 import lombok.Setter;
 

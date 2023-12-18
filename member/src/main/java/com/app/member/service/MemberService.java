@@ -1,6 +1,6 @@
 package com.app.member.service;
 
-import com.app.member.dao.MemberDTO;
+import com.app.member.dto.MemberDTO;
 import com.app.member.entity.MemberEntity;
 import com.app.member.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;

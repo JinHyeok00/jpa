@@ -1,4 +1,4 @@
-package com.app.member.dao;
+package com.app.member.dto;
 
 import com.app.member.entity.MemberEntity;
 import lombok.*;
