@@ -1,5 +1,6 @@
 package com.app.board.entity;
 
+import com.app.board.dto.BoardDTO;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,8 +9,8 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "tb_board")
-public class BoardEntity {
+@Table(name = "tbl_board")
+public class BoardEntity extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)     // auto_increment
     private Long id;
@@ -28,4 +29,14 @@ public class BoardEntity {
 
     @Column
     private int boardHits;
+
+    public static BoardEntity toSaveEntity(BoardDTO boardDTO){
+        BoardEntity boardEntity = new BoardEntity();
+        boardEntity.setBoardWriter(boardDTO.getBoardWriter());
+        boardEntity.setBoardContents(boardDTO.getBoardContents());
+        boardEntity.setBoardTitle(boardDTO.getBoardTitle());
+        boardEntity.setBoardPass(boardDTO.getBoardPass());
+        boardEntity.setBoardHits(0);
+        return boardEntity;
+    }
 }
