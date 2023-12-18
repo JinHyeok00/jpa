@@ -1,14 +1,14 @@
 package com.app.member.dao;
 
 import com.app.member.entity.MemberEntity;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
+// private로 만들기 때문에 Getter, Setter 가 필요하다
 @Getter
 @Setter
+// 기본생성자를 자동으로 만들어준다
 @NoArgsConstructor
+// DTO의 toString 만들어 줌
 @ToString
 public class MemberDTO {
     private Long id;
